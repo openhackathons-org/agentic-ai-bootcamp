@@ -67,6 +67,8 @@ flowchart LR
 
 ### Assignment 1 - QNA MCP Server
 
+This assignment is scored out of 6 points.
+
 The following folders/files for the qna mcp-server have been provided to you.  
 
 ```
@@ -102,6 +104,8 @@ The test cases are minimal and you should add in more on your own.
 ### Assignment 2 - Invoice MCP Server
 
 *Ensure assignment 1 is complete before starting on this assignment*
+
+This assignment is scored out of 6 points.
 
 The following folders/files for the invoice mcp-server have been provided to you.  
 
@@ -142,6 +146,8 @@ The test cases are minimal and you should add in more on your own.
 ### Assignment 3 - LLM Workflow
 
 *Ensure assignments 1 and 2 are complete before starting on this assignment*
+
+This assignment is scored out of 4 points.
 
 The following folders/files for the llm workflow have been provided to you.  
 
