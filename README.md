@@ -54,6 +54,8 @@ The duration of the challenge is 4 hours.
 
 3. Test your API Key to ensure it has permissions to invoke the cloud endpoints
 
+    ### MacOS
+
     Replace [YOUR_API_KEY] with your generated API key from 1)
     ```
     curl https://integrate.api.nvidia.com/v1/chat/completions \
@@ -69,6 +71,16 @@ The duration of the challenge is 4 hours.
         "presence_penalty": 0,
         "stream": false                
     }'
+    ```
+
+    ### Windows
+
+    Replace [YOUR_API_KEY] with your generated API key from 1)
+    ```
+    curl https://integrate.api.nvidia.com/v1/chat/completions ^
+    -H "Content-Type: application/json" ^
+    -H "Authorization: Bearer [YOUR_API_KEY]" ^
+    -d "{\"model\": \"nvidia/llama-3.3-nemotron-super-49b-v1\", \"messages\": [{\"role\":\"system\",\"content\":\"detailed thinking on\"}], \"temperature\": 0.6, \"top_p\": 0.95, \"max_tokens\": 4096, \"frequency_penalty\": 0, \"presence_penalty\": 0, \"stream\": false}"
     ```
 
 4. Install the following packages
