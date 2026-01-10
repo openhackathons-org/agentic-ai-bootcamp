@@ -1,0 +1,10 @@
+# Jupyter
+jupyterlab==4.4.10
+
+# MCP Server dependencies
+fastmcp==2.13.0.2
+
+# LangGraph demo dependencies
+langchain==0.3.27
+langchain-nvidia-ai-endpoints>=0.3.19
+langgraph==0.6.11
