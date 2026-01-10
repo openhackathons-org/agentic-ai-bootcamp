@@ -20,10 +20,6 @@ The tools and frameworks used in this bootcamp are as follows
 2. [Model Context Protocol](https://modelcontextprotocol.io/introduction)
 3. [LangGraph](https://langchain-ai.github.io/langgraph/)
 
-## Bootcamp Duration
-
-The duration of the tutorial is 2 hours.  
-The duration of the challenge is 4 hours.
 
 ## Running Locally
 Ensure the following tools are installed on your system:
@@ -38,5 +34,7 @@ cd agentic-ai-bootcamp
 pip install -r requirements.txt
 ```
 
-### Tutorial Duration
-The total lab session is 6 hours, a 2-hour tutorial, and a 4-hour challenge.
+## Bootcamp Duration
+
+The duration of the tutorial is 2 hours.  
+The duration of the challenge is 4 hours.
