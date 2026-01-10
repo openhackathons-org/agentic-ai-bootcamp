@@ -31,7 +31,7 @@ Ensure the following tools are installed on your system:
 ```
 git clone https://github.com/openhackathons-org/agentic-ai-bootcamp.git
 cd agentic-ai-bootcamp
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 ## Bootcamp Duration
