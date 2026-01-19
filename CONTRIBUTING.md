@@ -33,7 +33,7 @@ Emphasis, including quotes made for emphasis and introduction of new terms shoul
 #### Agentic AI Usecase
 * Agentic AI enables LLMs to go beyond text generation by interacting with external tools and services through the Model Context Protocol (MCP). Combined with LangGraph for workflow orchestration, agents can perform multi-step reasoning and task execution. The task would be to extend the repo with use cases demonstrating MCP tool integration and agentic workflows for real-world applications.
 * More use cases are encouraged. Currently we have `Q&A and Invoice Processing Agent`. New use cases should be added as separate folders from the existing ones.
-* 
+
 ### Directory stucture for Github
 
 Before starting to work on new lab it is important to follow the recommended git structure as shown below to avoid reformatting.
@@ -48,7 +48,7 @@ The lab optionally may also add custom license in case of any deviation from the
 
 Adding a new feature/lab will follow a forking workflow. Which means a feature branch development will happen on a forked repo which later gets merged into our original project (GPUHackathons.org) repository.
 
-![Git Branching Workflow](misc/images/git_branching.jpg)
+![Git Branching Workflow](misc/git_branching.jpg)
 
 The 5 main steps depicted in image above are as follows:
 1. Fork: To create a new lab/feature the GPUHackathons.org repository must be forked. Fork will create a snapshot of GPUHackathons.org repository at the time it was forked. Any new feature/lab that will be developed should be based on the develop branch of the repository.
