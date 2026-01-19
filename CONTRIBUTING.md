@@ -7,7 +7,7 @@ Before contributing significant changes, please begin a discussion of the desire
 
 ## License
 
-The preferred license for source code contributed to this project is the Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0) and for documentation, including Jupyter notebooks and text documentation, is the Creative Commons Attribution 4.0 International (CC BY 4.0) (https://creativecommons.org/licenses/by/4.0/). Contributions under other, compatible licenses will be considered on a case-by-case basis.
+The preferred license for source code contributed to this project is the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and for documentation, including Jupyter notebooks and text documentation, is the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Contributions under other, compatible licenses will be considered on a case-by-case basis.
 
 ## Styling
 
@@ -30,21 +30,19 @@ Emphasis, including quotes made for emphasis and introduction of new terms shoul
 
 ## Contributing Labs/Modules
 
-#### Nemo GPT Checkpoints
-* LLMs such GPT are currently the most advanced models in the NLP domain. However, these models are very large and are not best trained with TAO but rather with NVIDIA Nemo Framework to achieve desirable results. Also, the model enables to use of fewer size datasets through the concept of P-tuning. The task would be to extend the repo with a section that covers the fundamentals of NeMo and P-tuning/Prompt tuning with NeMo Megatron for Question Answering (QA)
-
+#### Agentic AI Usecase
+* Agentic AI enables LLMs to go beyond text generation by interacting with external tools and services through the Model Context Protocol (MCP). Combined with LangGraph for workflow orchestration, agents can perform multi-step reasoning and task execution. The task would be to extend the repo with use cases demonstrating MCP tool integration and agentic workflows for real-world applications.
+* More use cases are encouraged. Currently we have `Q&A and Invoice Processing Agent`. New use cases should be added as separate folders from the existing ones.
+* 
 ### Directory stucture for Github
 
 Before starting to work on new lab it is important to follow the recommended git structure as shown below to avoid reformatting.
 
 Each lab will have following files/directories consisting of training material for the lab.
 * jupyter_notebook folder: Consists of jupyter notebooks and its corresponding images.  
-* source_code folder: Source codes are stored in a separate directory because sometime not all clusters may support jupyter notebooks. During such bootcamps, we should be able to use the source codes directly from this directory. 
-* presentations: Consists of presentations for the labs ( pdf format is preferred )
-* Dockerfile and Singularity: Each lab should have both Docker and Singularity recipes.
+* challenge: Contains challenge exercises and solutions for hands-on practice
  
 The lab optionally may also add custom license in case of any deviation from the top level directory license ( Apache 2.0 ).
-
 
 ### Git Branching
 
