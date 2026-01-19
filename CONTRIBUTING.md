@@ -28,8 +28,6 @@ Emphasis, including quotes made for emphasis and introduction of new terms shoul
 * A level 1 heading should appear at the top of the notebook as the title of the notebook.
 * A horizontal rule should appear between sections that begin with a level 2 heading.
 
-
-
 ## Contributing Labs/Modules
 
 #### Nemo GPT Checkpoints
