@@ -106,6 +106,6 @@ If you encounter any issues:
 
 For additional help, please open an issue in the GitHub repository.
 
-Open the browser at `http://localhost:8888` and go click on the `Start_Here.ipynb`. As soon as you are done with the rest of the labs, shut down jupyter lab by selecting `File > Shut Down` and the container by typing `exit` or pressing `ctrl+d` in the terminal window.
+Open the browser at `http://localhost:8888` and go click on the `start_here.ipynb`. As soon as you are done with the rest of the labs, shut down jupyter lab by selecting `File > Shut Down` and the container by typing `exit` or pressing `ctrl+d` in the terminal window.
 
 Congratulations, you've successfully built and deployed an Agentic AI Bootcamp!
