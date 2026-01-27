@@ -110,7 +110,7 @@ If you encounter any issues:
 
 1. **Virtual Environment Issues**
    - Make sure you're in the correct directory when creating the virtual environment
-   - Verify that the virtual environment is activated (you should see `(nim-bootcamp-env)` in your terminal prompt)
+   - Verify that the virtual environment is activated (you should see `(agentic-ai-env)` in your terminal prompt)
 
 2. **Package Installation Issues**
    - Try updating pip before installing requirements: `pip install --upgrade pip`
