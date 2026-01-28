@@ -2,10 +2,29 @@
 
 The Agentic AI Bootcamp helps developers get started with building AI agents that can interact with external tools, data sources, and services. The labs guide participants through deploying NVIDIA® NIM™ microservices via cloud and local endpoints, and implementing the Model Context Protocol (MCP) for standardized AI-to-tool communication. Attendees will build MCP servers using both high-level (FastMCP) and low-level SDKs, exploring Stdio and HTTP transports for local and remote deployments. Participants will also design agentic workflows using LangGraph's StateGraph to orchestrate multi-step reasoning and tool invocation. The bootcamp concludes with a hands-on challenge where attendees build a complete AI agent integrating Q&A and Invoice MCP servers.
 
+### Deployment Options
+
+This bootcamp supports two flexible deployment configurations:
+
+**Option 1: Cloud-Based Deployment**
+
+When following `01_inference_endpoint.ipynb`, execute the **Cloud Endpoint** section and skip the **Local Endpoint** section.
+
+- **Hardware Requirements:** Any standard laptop or workstation (GPU not required)
+- **NIM Configuration:** Connects to NVIDIA AI cloud endpoints through API access
+- **Estimated Setup:** Approximately 10 minutes
+
+**Option 2: Self-Hosted Deployment**
+
+When following `01_inference_endpoint.ipynb`, execute the **Local Endpoint** section and skip the **Cloud Endpoint** section.
+
+- **Hardware Requirements:** GPU-enabled infrastructure (e.g., GPU node or cluster)
+- **NIM Configuration:** Run NVIDIA NIM microservices directly on your own hardware
+- **Estimated Setup:** Approximately 25 minutes (including NIM service deployment)
 
 ### Tested environment
 
-We tested and ran all labs on a DGX machine equipped with an Ampere A100 GPU.
+We tested and ran all labs on a DGX machine equipped with an Ampere A100 and H100 GPU.
 
 # Deploying the Labs
 
@@ -40,7 +59,10 @@ pip install -r https://github.com/openhackathons-org/agentic-ai-bootcamp/blob/ma
 
 #### 3. Verifying GPU Access
 
-To verify that your environment can access GPU resources, run the following Python commands:
+**Note:** This step is only applicable if you have GPU access. If you're using the cloud-based deployment option, you may skip this section.
+
+To confirm that your environment can successfully detect and access GPU resources, execute the following Python commands:
+
 ```python
 import torch
 
@@ -82,13 +104,13 @@ After running the command, you should see output similar to:
 
 Copy the URL from the output and paste it into your browser. If prompted for a token, you can find it in the terminal output.
 
-#### Troubleshooting
+### Troubleshooting
 
 If you encounter any issues:
 
 1. **Virtual Environment Issues**
    - Make sure you're in the correct directory when creating the virtual environment
-   - Verify that the virtual environment is activated (you should see `(nim-bootcamp-env)` in your terminal prompt)
+   - Verify that the virtual environment is activated (you should see `(agentic-ai-env)` in your terminal prompt)
 
 2. **Package Installation Issues**
    - Try updating pip before installing requirements: `pip install --upgrade pip`
