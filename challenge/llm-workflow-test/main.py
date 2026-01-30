@@ -1,17 +1,16 @@
+
+from pathlib import Path
 import sys
-sys.path.append("..")
+sys.path.append(str(Path(__file__).parent.parent.resolve()))
 import asyncio
+import argparse
 from langgraph.checkpoint.memory import InMemorySaver
 from llm_workflow import create_workflow
 
 async def run(app,config,input):
     await app.ainvoke(input,debug=True,config=config)
 
-async def main():
-
-    nvidia_api_key = '<your nvidia api key'
-    mcp_server_url = "http://localhost:8000/mcp"
-    inf_url = "https://integrate.api.nvidia.com/v1"
+async def main(nvidia_api_key,mcp_server_url,inf_url):
 
     memory = InMemorySaver()
     config = {
@@ -36,5 +35,16 @@ async def main():
     print(snapshot.values)
     
 if __name__ == '__main__':
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description='llm workflow test')
+    parser.add_argument('--nvidia-api-key', 
+                       default="",
+                       help='your nvidia api key')
+    parser.add_argument('--mcp-server-url', 
+                       default="http://localhost:8000/mcp",
+                       help='mcp server url')
+    parser.add_argument('--inf-url', 
+                       default="https://integrate.api.nvidia.com/v1",
+                       help='base url for inference')
+    args = parser.parse_args()
+    asyncio.run(main(args.nvidia_api_key,args.mcp_server_url,args.inf_url))
    

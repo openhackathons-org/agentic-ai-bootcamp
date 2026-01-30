@@ -1,15 +1,14 @@
 [project]
-name = "llm-workflow"
+name = "qna-agent-test"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "httpx>=0.28.1",
     "langchain>=1.2.7",
     "langchain-nvidia-ai-endpoints>=1.0.2",
     "langgraph>=1.0.7",
-    "mcp[cli]>=1.26.0",
-    "openai>=2.16.0",
-    "tabulate>=0.9.0",
+    "pandas>=3.0.0",
+    "rouge>=1.0.1",
+    "strictyaml>=1.7.3",
 ]

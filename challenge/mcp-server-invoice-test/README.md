@@ -2,19 +2,14 @@
 
 ## Commands
 
-Start invoice mcp server
-
-```
+Launch the mcp web server
+```bash
 cd mcp-servers/invoice
-uv run mcp-server-invoice \
-    --mcp-server-qna-path ../qna \
-    --inf-url https://integrate.api.nvidia.com/v1 \
-    --nvidia-api-key <your api key>
+uv run mcp-server-invoice
 ```
 
-Run your test cases
-
-```
+Run the test
+```bash
 cd mcp-server-invoice-test
-uv run main.py
+uv run main.py --mcp-server-url http://localhost:8000/mcp
 ```

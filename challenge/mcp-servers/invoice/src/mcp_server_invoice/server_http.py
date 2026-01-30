@@ -14,8 +14,6 @@ import contextlib
 import logging
 from collections.abc import AsyncIterator
 import uvicorn
-from . import qna_agent
-# import qna_agent
 
 logger = logging.getLogger(__name__)
 
@@ -205,17 +203,8 @@ class Invoice:
             text=json.dumps(output)
         )]
 
-class ExternalAgents:
-    def __init__(self,nvidia_api_key,mcp_server_qna_path,inf_url):
-        self.qna_agent = qna_agent.QNAAgent(nvidia_api_key,mcp_server_qna_path,inf_url)
-    async def _media_lookup(self,query) -> List[types.TextContent]:
-        ## TODO
-        ## invoke qna agent and return output
-        pass
-
-def main(db_path:str,nvidia_api_key:str,mcp_server_qna_path:str,inf_url:str):
+def main(db_path:str):
     invoice = Invoice(db_path)
-    external_agent = ExternalAgents(nvidia_api_key,mcp_server_qna_path,inf_url)
     mcp = Server("invoice")
     @mcp.list_tools()
     async def handle_list_tools() -> list[types.Tool]:
