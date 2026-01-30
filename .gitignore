@@ -9,5 +9,4 @@ wheels/
 # Virtual environments
 .venv
 .vscode/
-
-skills/
+tutorial/jupyter_notebook/skills/
