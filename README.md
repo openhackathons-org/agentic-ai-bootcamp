@@ -20,20 +20,6 @@ The tools and frameworks used in this bootcamp are as follows
 2. [Model Context Protocol](https://modelcontextprotocol.io/introduction)
 3. [LangGraph](https://langchain-ai.github.io/langgraph/)
 
-
-## Running Locally
-Ensure the following tools are installed on your system:
-* [uv package manager](https://docs.astral.sh/uv/getting-started/installation/)
-* [python](https://docs.astral.sh/uv/guides/install-python/)
-* [git version control](https://github.com/git-guides/install-git)
-* [claude desktop](https://claude.ai/download)
-
-```
-git clone https://github.com/openhackathons-org/agentic-ai-bootcamp.git
-cd agentic-ai-bootcamp
-uv pip install -r requirements.txt
-```
-
 ## Bootcamp Duration
 
 The duration of the tutorial is 2 hours.  
