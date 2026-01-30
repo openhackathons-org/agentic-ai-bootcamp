@@ -66,7 +66,7 @@ If the customer has not specified the required information (either Invoice/Invoi
 or first name, last name, phone) then please ask them to specify it."""
 
 async def qna_agent(state:State,config: RunnableConfig):
-    inf_url = config.get("configurable", {}).get("inf_url")
+    inf_url = config.get("configurable", {}).get("inf_url_qna_agent")
     nvidia_api_key = config.get("configurable", {}).get("nvidia_api_key")
     agent = create_sql_agent(skills_dir,inf_url,nvidia_api_key,debug=True)
     messages = convert_to_openai_messages([*state['messages']])

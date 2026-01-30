@@ -10,7 +10,7 @@ from llm_workflow import create_workflow
 async def run(app,config,input):
     await app.ainvoke(input,debug=True,config=config)
 
-async def main(nvidia_api_key,mcp_server_url,inf_url):
+async def main(nvidia_api_key,mcp_server_url,inf_url,inf_url_qna_agent):
 
     memory = InMemorySaver()
     config = {
@@ -18,7 +18,8 @@ async def main(nvidia_api_key,mcp_server_url,inf_url):
         "env":"test",
         "nvidia_api_key": nvidia_api_key,
         "mcp_server_url": mcp_server_url,
-        "inf_url": inf_url
+        "inf_url": inf_url,
+        "inf_url_qna_agent": inf_url_qna_agent
     }
     app = create_workflow(memory=memory)
 
@@ -45,6 +46,9 @@ if __name__ == '__main__':
     parser.add_argument('--inf-url', 
                        default="https://integrate.api.nvidia.com/v1",
                        help='base url for inference')
+    parser.add_argument('--inf-url-qna-agent', 
+                       default="https://integrate.api.nvidia.com/v1",
+                       help='base url for inference')
     args = parser.parse_args()
-    asyncio.run(main(args.nvidia_api_key,args.mcp_server_url,args.inf_url))
+    asyncio.run(main(args.nvidia_api_key,args.mcp_server_url,args.inf_url,args.inf_url_qna_agent))
    
