@@ -24,3 +24,17 @@ The tools and frameworks used in this bootcamp are as follows
 
 The duration of the tutorial is 2 hours.  
 The duration of the challenge is 4 hours.
+
+## Bootcamp Prerequisites:
+
+Basic experience with Python programming is required for this bootcamp. Familiarity with fundamental concepts of Large Language Models (LLMs) and generative AI is recommended but not mandatory. Experience working with APIs (such as REST APIs) will be helpful. No prior experience with agentic AI frameworks is required.
+
+## Attribution
+
+This material originates from the OpenHackathons Github repository. Check out additional materials [here](https://github.com/openhackathons-org).
+
+Don't forget to check out additional [Open Hackathons Resources](https://www.openhackathons.org/s/technical-resources) and join our [OpenACC and Hackathons Slack Channel](https://www.openacc.org/community#slack) to share your experience and get more help from the community.
+
+## Licensing
+
+Copyright © 2026 OpenACC-Standard.org. This material is released by OpenACC-Standard.org, in collaboration with NVIDIA Corporation, under the Creative Commons Attribution 4.0 International (CC BY 4.0). These materials may include references to hardware and software developed by other entities; all applicable licensing and copyrights apply.
