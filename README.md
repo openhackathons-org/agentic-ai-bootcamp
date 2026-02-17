@@ -25,7 +25,7 @@ The tools and frameworks used in this bootcamp are as follows
 The duration of the tutorial is 2 hours.  
 The duration of the challenge is 4 hours.
 
-## Bootcamp Prerequisites:
+## Bootcamp Prerequisites
 
 Basic experience with Python programming is required for this bootcamp. Familiarity with fundamental concepts of Large Language Models (LLMs) and generative AI is recommended but not mandatory. Experience working with APIs (such as REST APIs) will be helpful. No prior experience with agentic AI frameworks is required.
 
