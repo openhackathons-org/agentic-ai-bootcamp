@@ -32,7 +32,7 @@ def load_skill(skills_dir: Path,skill_name: str) -> str:
     """
     content = read_instruction(skills_dir / skill_name)
     if content:
-        return f"Loaded skill: {skill_name}\n\ncontent"
+        return f"Loaded skill: {skill_name}\n\n{content}"
     else:
         skills = list_skills(skills_dir)
         available = ", ".join(skills.name for s in skills)
