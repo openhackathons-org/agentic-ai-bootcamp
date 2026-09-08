@@ -11,7 +11,7 @@ Ensure the following tools are installed on your system:
 * [Python](https://docs.astral.sh/uv/guides/install-python/)
 * [Git Version Control](https://github.com/git-guides/install-git)
 * [Docker](https://docs.docker.com/engine/install/)
-* [VSCode](https://code.visualstudio.com/) or your IDE of choice
+* [Jupyer lab](https://jupyter.org/install)
 
 ### Labs
 
@@ -28,7 +28,7 @@ For a multi-tenant setup, the below ports will need to be dynamically allocated.
 
 ```
 BOOTCAMP_DIR=$PWD # path to agentic-ai-bootcamp
-VSCODE_PORT=8080 # Port to access VSCode (entry point to IDE)
+JUPYTER_PORT=8080 # Port to access jupyer lab
 export PHOENIX_PORT=6006 # Port to access phoenix server
 export MCP_PORT=8001 # Port to access HTTP based MCP Server
 export NIM_PORT=8000 # Port to access NIM server
@@ -48,27 +48,14 @@ uv sync
 curl -fsSL https://opencode.ai/install | bash
 ```
 
-#### Setup VS Code Server
+#### Start the labs
 
 ```
-curl -fsSL https://code-server.dev/install.sh | sh
-
-code-server --install-extension ms-python.python --install-extension ms-toolsai.jupyter
-
-cat > "$BOOTCAMP_DIR/.vscode/settings.json" << EOF
-{
-  "python.defaultInterpreterPath": "$BOOTCAMP_DIR/.venv/bin/python",
-  "python.terminal.executeInFileDir": true,
-  "terminal.integrated.cwd": "$BOOTCAMP_DIR",
-  "python.terminal.activateEnvironment": true
-}
-EOF
-
-code-server --bind-addr 0.0.0.0:$VSCODE_PORT --auth none $BOOTCAMP_DIR
+jupyter lab --ip 0.0.0.0 --port $JUPYTER_PORT --no-browser --ServerApp.token='' --ServerApp.password=''
 ```
 
 #### Opening the labs
 
-With code-server running, open http://$HOSTNAME:$VSCODE_PORT. In the workspace, open the tutorial directory and start from start_here.ipynb.
+With jupyer lab running, open http://$HOSTNAME:$JUPYTER_PORT. In the workspace, open the tutorial directory and start from start_here.ipynb.
 
 When you are finished with the labs close your shell or pressing Ctrl+D in the terminal. Congratulations, you've successfully built and deployed an Agentic AI Bootcamp!

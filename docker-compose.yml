@@ -1,9 +1,0 @@
-services:
-  agentic-ai-bootcamp:
-    build: .
-    ports:
-      - "8888:8888"
-      - "6006:6006"
-    volumes:
-      - .:/workspace/agentic-ai-bootcamp
-      - ./settings.json:/workspace/agentic-ai-bootcamp/.vscode/settings.json
