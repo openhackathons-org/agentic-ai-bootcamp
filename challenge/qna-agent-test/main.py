@@ -3,10 +3,6 @@ import os
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.resolve()))
 from qna_agent.main import create_sql_agent
-import sqlite3
-import json
-from rouge import Rouge
-import pandas as pd
 import asyncio
 import argparse
 

@@ -5,19 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "arize-phoenix>=15.4.0",
     "fastmcp>=3.4.4",
     "httpx>=0.28.1",
-    "jupyter>=1.1.1",
     "langchain>=1.3.14",
     "langchain-nvidia-ai-endpoints>=1.4.3",
     "langgraph>=1.2.9",
-    "mcp[cli]>=1.28.1",
-    "nvidia-nat[eval]>=1.8.0",
-    "nvidia-nat[langchain]>=1.8.0",
-    "nvidia-nat[mcp]>=1.8.0",
-    "nvidia-nat[phoenix]>=1.8.0",
-    "nvidia-nat[profiling]>=1.8.0",
+    "mcp[cli]==1.28.1",
     "openai>=2.16.0",
     "pandas>=3.0.0",
     "rouge>=1.0.1",

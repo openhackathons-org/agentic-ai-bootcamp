@@ -13,5 +13,5 @@ cd ../mcp-servers/invoice && uv run mcp-server-invoice &
 Then test your workflow with a question, for example:
 
 ```bash
-nat run --config_file workflow.yaml --input "How many Led Zeppelin tracks did Aaron Mitchell purchase?"
+nat run --config_file workflow.yaml --input "How many Led Zeppelin tracks did Aaron Mitchell (Number +1 (204) 452-6452) purchase?"
 ```
