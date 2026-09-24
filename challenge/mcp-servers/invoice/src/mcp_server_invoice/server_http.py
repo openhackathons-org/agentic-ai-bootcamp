@@ -251,8 +251,7 @@ def main(db_path:str):
         lifespan=lifespan,
     )
 
-    port = int(os.environ.get("MCP_PORT", "8000"))
-    uvicorn.run(starlette_app, host="127.0.0.1", port=port)
+    uvicorn.run(starlette_app, host="127.0.0.1",port=int(os.environ.get("MCP_PORT", 8000)))
 
 class ServerWrapper():
     """A wrapper to compat with mcp[cli]"""
