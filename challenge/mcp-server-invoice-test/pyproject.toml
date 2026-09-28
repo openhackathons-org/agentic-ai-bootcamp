@@ -11,7 +11,5 @@ dependencies = [
     "langgraph>=1.2.9",
     "mcp[cli]==1.28.1",
     "openai>=2.16.0",
-    "pandas>=3.0.0",
-    "rouge>=1.0.1",
     "strictyaml>=1.7.3",
 ]
