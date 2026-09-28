@@ -12,6 +12,5 @@ dependencies = [
     "langchain-nvidia-ai-endpoints>=1.4.3",
     "langgraph>=1.2.9",
     "mcp[cli]==1.28.1",
-    "nvidia-nat[langchain,mcp,phoenix,eval]>=1.8.0",
     "strictyaml>=1.7.3",
 ]
